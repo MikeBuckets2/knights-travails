@@ -5,4 +5,7 @@ function knightMoves(start, end) {
         [1, 2], [1, -2],
         [-1, 2], [-1, -2]
     ];
+
+    const isValid = (x, y) => 
+        x >= 0 && x < 8 && y >= 0 && y < 8;
 };
