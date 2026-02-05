@@ -11,4 +11,12 @@ function knightMoves(start, end) {
 
     const queue = [];
     const visited = new Set();
+
+    queue.push({ position: start, path: [start] });
+    visited.add(start.toString());
+
+    while (queue.length > 0) {
+        const { position, path } = queue.shift();
+        const [x, y] = position;
+    }
 };
