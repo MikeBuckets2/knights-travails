@@ -28,7 +28,7 @@ function knightMoves(start, end) {
         for (const [dx, dy] of moves) {
             const newX = x + dx;
             const newY = y + dy;
-            const key = [nexX, newY].toString();
+            const key = [newX, newY].toString();
 
             if (isValid(newX, newY) && !visited.has(key)) {
                 visited.add(key);
@@ -42,3 +42,5 @@ function knightMoves(start, end) {
 
     return null;
 };
+
+knightMoves([3, 3], [4, 3]);
