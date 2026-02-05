@@ -19,4 +19,10 @@ function knightMoves(start, end) {
         const { position, path } = queue.shift();
         const [x, y] = position;
     }
+
+    if (x === end[0] && y === end[1]) {
+        console.log(`You made it in ${path.length - 1} moves! Here's your path:`);
+        path.forEach(square => console.log(square));
+        return path;
+    }
 };
